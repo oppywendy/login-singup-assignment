@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="ALT School First Figma Assignment">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/9a2442e22b.js" crossorigin="anonymous"></script>
+
+   
+    <title>Web Development Training</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="./assets/images/Logo.png" alt="Logo" width="77.33" height="80px" class="header__logo">
+            <h1 class="header__h1">For Individuals</h1>
+            <p class="header__p hp1">Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</p>
+            <p class="header__p hp2">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+        </header>
+        <main class="main">
+            <article class="main__article register">
+                <form action="" class="register__form">
+                    <div class="register__container">
+                        <div class="firNam">
+                            <label for="firstName" class="register__label">First Name</label>
+                            <input class="register__input input--active" type="text" name="firstName" id="firstName" placeholder="Tolu" required>
+                        </div>
+                        <div class="lasNam"><label for="lastName" class="register__label">Last Name</label>
+                            <input class="register__input" type="text" name="lastName" id="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="register__container">
+                        <div class="genDr">
+                            <label for="gender" class="register__label">Gender</label>
+                            <input class="register__input input__gender" type="text" name="gender" id="gender" list="genderList" placeholder="Select here" required>
+                            <!-- <span class="dropdown-icon"><img src="./assets/images/down-arrow.png" alt=""></span> -->
+                            <datalist id="genderList">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                            </datalist>
+                        </div>
+                        <div class="DaoBi">
+                            <label for="dob" class="register__label">Date of Birth</label>
+                            <input class="register__input" type="date" name="dob" id="dob" placeholder="Select here" required>
+                        </div>
+                    </div>
+
+                    <div class="register__container">
+                        <div class="weit">
+                            <label for="weight" class="register__label">Weight (KG)</label>
+                            <input class="register__input" type="text" name="weight" id="weight" placeholder="Enter Weight" required>
+                        </div>
+                        <div class="heit">
+                            <label for="height" class="register__label">Height (CM)</label>
+                            <input class="register__input" type="text" name="height" id="height" placeholder="Enter height here ..." required>
+                        </div>
+                    </div>
+
+                    <div class="register-container">
+                        <div class="activity">
+                            <label for="activity" class="register__label">Activity Level</label>
+                            <input class="register__input" type="text" name="activity" id="activity" list="activityList" placeholder="Select here" required>
+                            <datalist id="activityList">
+                            <option value="Beginner">Male</option>
+                            <option value="Intermediate">Female</option>
+                            <option value="Advanced">Other</option>
+                            </datalist>
+                        </div>
+                        <div class="password">
+                            <label for="password" class="register__label">Password</label>
+                            <input class="register__input" type="password" name="password" id="password" required>
+                        </div>
+                    </div>
+                    <button class="button" type="submit">Register</button>
+                </form>
+                <p class="register__p">By clicking Register, you agree to our <span>Terms of Use</span> and our <span>Privacy Policy</span></p>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

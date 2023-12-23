@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/brown'); */
+
+ 
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--FF);
+  }
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+input, button, textarea, select {
+    font: inherit;
+  }
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+#root, #__next {
+    isolation: isolate;
+  }
+
+:root {
+    /* COLORS */
+    --HEADER-COLOR: #000B0A;
+    --HP-COLOR: #737373;
+    --FORM-HEAD-COLOR: #011C34;
+    --BUTTON-COLOR: #2EC4B6;
+    --BG-COLOR: hsla(174, 62%, 47%, 0.04);
+    --TEXT-HEADINGS-COLOR: #011C34;
+    --GRAY: #F0F0F0;
+
+    /* FONT */
+    --FF: "Poppins";
+    --HEADER-FF: "Poppins";
+  }
+
+html {
+    background-color: var(--BG-COLOR);
+    height: 100vh;
+    /* opacity: 0.04; */
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px
+}
+
+.header {
+    font-family: var(--HEADER-FF);
+}
+
+.header__h1 {
+    color: #000B0A;;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+}
+
+.header__p {
+    color: var(--HP-COLOR);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 460px;
+    white-space: normal;
+}
+
+.hp2 {
+    display: none;
+}
+
+.main__article {
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 40px;
+    width: 100%;
+}
+
+.register__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.register__container--2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.register__label {
+    display: block;
+    color: var(--TEXT-HEADINGS-COLOR);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.activity, .password {
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.register__input {
+    width: 100%;
+    margin-block-start: 10px;
+    padding-block-start: 14px;
+    padding-block-end: 14px;
+    padding-inline-start: 16px;
+    border-color: var(--GRAY);
+    border-style:solid;
+    /* padding-inline-end: 52px; */
+}
+
+.input--active {
+    border-color: var(--BUTTON-COLOR);
+    border-style: solid;
+}
+
+::placeholder {
+    color: var(--TEXT-HEADINGS-COLOR);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
+.genDr, .DaoBi, .weit, .heit, .acvity, .paswrd, .button {
+    margin-block-start: 30px;
+}
+.input__gender {
+    position: relative;
+}
+
+.button {
+    width: 100%;
+    background-color: var(--BUTTON-COLOR);
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.10);
+    border: 0;
+    border-radius: 3px;
+}
+
+.register__p {
+    margin-block-start: 16px;
+}
+
+span {
+    color: var(--BUTTON-COLOR);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-block-start: 74px;
+        padding-inline-start: 24px;
+        padding-inline-end: 24px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin-block-start: 74px;
+    }
+
+    .hp2 {
+        display: inline;
+    }
+
+    .hp1 {
+        display: none;
+    }
+
+    .main__article {
+        background-color: inherit;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        margin-top: 30px;
+        padding-block-end: 24px;
+        padding: 0;
+    }
+
+    .header__h1 {
+        margin-block-start: 40px;
+    }
+
+    .header__p {
+        margin-block-start: 12px;
+    }
+
+    .register__form {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 6px;
+        box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+        height: 100%;
+    }
+
+    .register__container {
+        display: flex;
+        flex-direction: column;
+    }
+}
